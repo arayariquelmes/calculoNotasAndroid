@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="Registre sus notas para calcular">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/notaTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Nota"
+            android:inputType="numberDecimal">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/porcentajeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="Porcentaje %"
+            android:inputType="number"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/calcularBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorAccent"
+            android:text="Agregar"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextoSecundario"></Button>
+
+        <Button
+            android:id="@+id/limpiarBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#ffbf17"
+            android:layout_weight="1"
+            android:text="Limpiar"
+            android:textAllCaps="false"
+            android:textColor="@color/colorTextoSecundario"></Button>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutPromedio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Promedio:"
+            android:textSize="30sp"></TextView>
+
+        <TextView
+            android:id="@+id/promedioTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="30sp"></TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_horizontal"
+        android:text="Notas Registradas"
+        android:textColor="@color/colorTextoSecundario"
+        android:textSize="40sp">
+
+    </TextView>
+    <ListView
+        android:id="@+id/notasLv"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="70dp"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CalculoNotas</string>
+    <string name="error_validacion">Errores de validación</string>
+</resources>
